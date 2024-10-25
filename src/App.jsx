@@ -32,7 +32,7 @@ const MainContent = () => {
   }, [showModal])
 
   return (
-    <div className={`relative flex items-center justify-center ${showModal ? 'bg-black bg-opacity-50 pointer-events-none' : 'rose-bg pointer-events-auto'} h-[100vh]`}>
+    <div className={`relative flex items-center justify-center ${showModal ? 'bg-black bg-opacity-50 pointer-events-none' : 'rose-bg pointer-events-auto'} min-h-screen`}>
       <div className={`flex flex-col lg:flex-row w-[90%] gap-6 items-start justify-center ${showModal ? 'opacity-50' : 'opacity-100'} transition-opacity duration-300`}>
         
         {/* Main Content Section */}
