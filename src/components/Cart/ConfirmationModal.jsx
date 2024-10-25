@@ -32,8 +32,8 @@ const ConfirmationModal = () => {
     return (
         <div>
           <div
-            className={`bg-white w-full bottom-0 left-0 sm:left-1/3 fixed z-50 p-8 rounded-tr-xl rounded-tl-xl md:rounded-xl h-[90vh] sm:h-[68vh] sm:w-[500px]  ${
-                showModal ? 'show sm:bottom-1/4 sm:left-1/3' : ''
+            className={`bg-white w-full bottom-0 left-0 sm:left-1/3 fixed z-50 p-8 rounded-tr-xl rounded-tl-xl sm:rounded-xl h-[90vh] sm:h-[75vh] sm:w-[500px]  ${
+                showModal ? 'show sm:bottom-[20%] sm:left-[20%] lg:left-[35%]' : ''
             } sm:centered-modal transition-all duration-500 ease-in-out ${
                 showModal ? 'translate-y-0' : 'translate-y-full'
             }`}
