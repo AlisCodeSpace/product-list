@@ -5,7 +5,7 @@ const Product = ({ mobileImage, desktopImage, tabletImage, name, category, price
   const activeItem = isInCart ? 'border-2 red-border' : ''
 
   return (
-    <li className="list-none mb-6 w-full sm:w-[240px]">
+    <li className="list-none mb-6 w-full sm:w-[180px]">
         <div>
             <div className="relative">
                 <picture>
