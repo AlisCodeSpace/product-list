@@ -32,7 +32,7 @@ const ConfirmationModal = () => {
     return (
         <div>
           <div
-            className={`bg-white w-full bottom-0 left-0 sm:left-1/3 fixed z-50 p-8 rounded-tr-xl rounded-tl-xl md:rounded-xl h-[90vh] sm:h-[65vh] sm:w-[500px]  ${
+            className={`bg-white w-full bottom-0 left-0 sm:left-1/3 fixed z-50 p-8 rounded-tr-xl rounded-tl-xl md:rounded-xl h-[90vh] sm:h-[68vh] sm:w-[500px]  ${
                 showModal ? 'show sm:bottom-1/4 sm:left-1/3' : ''
             } sm:centered-modal transition-all duration-500 ease-in-out ${
                 showModal ? 'translate-y-0' : 'translate-y-full'
@@ -45,7 +45,7 @@ const ConfirmationModal = () => {
             </div>
             <div className='flex flex-col items-center justify-center my-4'>
               <div className='rose-bg rounded-lg w-full'>
-                <ul className='flex flex-col p-4 gap-4 overflow-scroll max-h-[38vh] scrollbar-hide'>
+                <ul className='flex flex-col p-4 gap-4 overflow-scroll md:max-h-[25vh] scrollbar-hide'>
                   {renderCartItems}
                 </ul>
                 <div className='flex justify-between items-center mb-6 mt-4 px-4'>
