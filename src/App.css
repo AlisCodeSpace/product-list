@@ -3,6 +3,10 @@ body {
     padding: 0;
     font-family: "Red Hat Text";
     font-size: 16px;
+}
+
+
+.rose-bg {
     background-color: hsl(20, 50%, 98%);
 }
 
@@ -14,10 +18,23 @@ body {
     background-color: hsl(14, 86%, 42%);
 }
 
+.red-border {
+    border-color: hsl(14, 86%, 42%);
+}
+
 .rose-500 {
     color: hsl(12, 20%, 44%);
+}
+
+.rose-900 {
+    color: hsl(14, 65%, 9%);
 }
 
 .border--rose--400 {
     border-color: hsl(7, 20%, 60%);
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
