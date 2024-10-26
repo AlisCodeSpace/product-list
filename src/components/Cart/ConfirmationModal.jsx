@@ -14,15 +14,15 @@ const ConfirmationModal = () => {
                     <img className='rounded-md' src={item.thumbnail} alt="Thumbnail" />
                 </div>
                 <div className='flex items-center justify-between w-full'>
-                    <div className='flex flex-col gap-2'>
-                        <span className='font-semibold'>{item.name}</span>
+                    <div className='flex flex-col gap-2 text-sm'>
+                        <span className='font-semibold '>{item.name}</span>
                         <div className='flex gap-3'>
                             <span className='red font-semibold'>{item.quantity}x</span>
                             <span className='rose-500 font-medium'>@ ${item.price}</span>
                         </div>
                     </div>
                     <div>
-                        <span className='rose-900 font-semibold text-xl'>${item.price * item.quantity}</span>
+                        <span className='rose-900 font-semibold text-md'>${item.price * item.quantity}</span>
                     </div>
                 </div>
             </div>
@@ -32,8 +32,8 @@ const ConfirmationModal = () => {
     return (
         <div>
           <div
-            className={`bg-white w-full bottom-0 left-0 xl:left-[35%] lg:left-[25%] md:left-[19%] fixed z-50 p-8 rounded-tr-xl rounded-tl-xl sm:rounded-xl h-[90vh] sm:h-[75vh] sm:w-[500px]  ${
-                showModal ? 'show sm:bottom-[20%] sm:left-[20%] xl:left-[35%] lg:left[25%] md:left-[19%]' : ''
+            className={`bg-white w-full bottom-0 left-0 xl:left-[35%] lg:left-[25%] md:left-[19%] fixed z-50 p-8 rounded-tr-xl rounded-tl-xl sm:rounded-xl h-[95vh] sm:w-[500px]  ${
+                showModal ? 'show sm:bottom-[3%] sm:left-[20%] xl:left-[35%] lg:left[25%] md:left-[19%]' : ''
             } sm:centered-modal transition-all duration-500 ease-in-out ${
                 showModal ? 'translate-y-0' : 'translate-y-full'
             }`}
@@ -45,7 +45,7 @@ const ConfirmationModal = () => {
             </div>
             <div className='flex flex-col items-center justify-center my-4'>
               <div className='rose-bg rounded-lg w-full'>
-                <ul className='flex flex-col p-4 gap-4 overflow-scroll md:max-h-[25vh] scrollbar-hide'>
+                <ul className='flex flex-col p-4 gap-4 overflow-scroll max-h-[31vh] scrollbar-hide'>
                   {renderCartItems}
                 </ul>
                 <div className='flex justify-between items-center mb-6 mt-4 px-4'>
